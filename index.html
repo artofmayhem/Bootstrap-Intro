@@ -12,29 +12,118 @@
   </head>
   <body>
     
-    <div class="container-fluid" style="background-color: black">
-      <h1 class="display-1" style="color: #777; text-align: center">Display 1</h1>
+<div class="container-fluid" style="background-color: black">
+
+<!--Display sizes + picture header-->
+     <div class="container"><img src="https://assets.codepen.io/4996277/pexels-omar-alnahi-18495.jpg" />
+        <h1 class="display-1" style="color: #777; text-align: center">Display 1</h1>
         <h1 class="display-2"style="color: #777; text-align: center">Display 2</h1>
         <h1 class="display-3"style="color: #777; text-align: center">Display 3</h1>
         <h1 class="display-4"style="color: #777; text-align: center">Display 4</h1>
+     </div>
+<!--row sizes must equal 12-->  
     <div class="row">
-      <div class="col-sm-2" style="background-color: #034EA2; color: #FFF; text-align: center"><h1>This is 2 size row</h1></div>
-      <div class="col-sm-2" style="background-color: #303A99; color: #FFF; text-align: center"><h2>This is 2 size row</h2></div>
+      <div class="col-sm-2 bg-primary" style="color: #FFF; text-align: center"><h1>This is 2 size row</h1></div>
+      <div class="col-sm-2 bg-success" style="color: #FFF; text-align: center"><h2>This is 2 size row</h2></div>
+<!--Two methods towards the same end-->
       <div class="col-sm-2" style="background-color: #5E2390; color: #FFF; text-align: center"><h3>This is 2 size row</h3></div>
       <div class="col-sm-2" style="background-color: #8B0D88; color: #FFF; text-align: center"><h4>This is 2 size row</h4></div>
       <div class="col-sm-2" style="background-color: #C00384; color: #FFF; text-align: center"><h5>This is 2 size row</h5></div>
       <div class="col-sm-2" style="background-color: #F1008D; color: #FFF; text-align: center"><h6>This is 2 size row</h6></div>
-      </div>
-    <div class="row">
-      <div class="col-sm-12" style="background-color: #000; color: #FFF; text-align: center"><h1>This is 12 size</h1></div>
-      <div class="col-sm-6" style="background-color: #303A99; color: #FFF; text-align: center"><h2>This is 6 size</h2></div>
-      <div class="col-sm-6" style="background-color: #5E2390; color: #FFF; text-align: center"><h3>This is 6 size</h3></div>
-      <div class="col-sm-5" style="background-color: #8B0D88; color: #FFF; text-align: center"><h4>This is 5 size</h4></div>
-      <div class="col-sm-5" style="background-color: #C00384; color: #FFF; text-align: center"><h5>This is 5 size</h5></div>
-      <div class="col-sm-2" style="background-color: #F1008D; color: #FFF; text-align: center"><h6>This is 2</h6></div>
-      </div>
-      <p style="color: #FFF; text-align: center"> This is a p element of 16px 1.5 line spacing, zero top margin bottom margin 1rem (16px)</p>
     </div>
+<!--background colors-->
+    <div class="row">
+      <div class="col-sm-12" style="background-color: #000; color: #FFF; text-align: center"><h1>This is the way</h1></div>
+      <div class="col-sm-6" style="background-color: #303A99; color: #FFF; text-align: center"><h2>This is the way</h2></div>
+      <div class="col-sm-6" style="background-color: #5E2390; color: #FFF; text-align: center"><h3>This is the way</h3></div>
+      <div class="col-sm-5" style="background-color: #8B0D88; color: #FFF; text-align: center"><h4>This is the way</h4></div>
+      <div class="col-sm-5" style="background-color: #C00384; color: #FFF; text-align: center"><h5>This is the way</h5></div>
+      <div class="col-sm-2" style="background-color: #F1008D; color: #FFF; text-align: center"><h6>This is the way</h6></div>
+   </div>
+<!--individual p element-->      
+      <p class="bg-light" style="color: #000; text-align: center"> This is a p element of 16px 1.5 line spacing, zero top margin bottom margin 1rem (16px) bg-light</p>
+<!--bg-colors outlined by bootstrap-->      
+   <div class="row">
+      <div class="col-sm-2 bg-primary" style="text-align: center"><h1>class bg-primary</h1></div>
+      <div class="col-sm-2 bg-success" style="color: #FFF; text-align: center"><h2>class bg-success</h2></div>
+<!--Two methods towards the same end-->
+      <div class="col-sm-2 bg-warning" style="text-align: center"><h3>class bg-warning</h3></div>
+      <div class="col-sm-2 bg-danger" style="text-align: center"><h4>class bg-danger</h4></div>
+      <div class="col-sm-2 bg-secondary" style="text-align: center"><h5>class bg-secondary</h5></div>
+      <div class="col-sm-2 bg-dark" style="text-align: center"><h6>class bg-dark</h6></div>
+   </div>
+<!--text-colors as outlined in bootstrap-->      
+   <div class="container" style="text-align: center">
+     <h3 class="bg-primary text-muted">Text muted</h3>
+     <h3 class="bg-success text-primary">Text primary</h3>
+     <h3 class="bg-warning text-success">Text success</h3>
+     <h3 class="bg-danger text-info">Text info</h3>
+     <h3 class="bg-secondary text-warning">Text warning</h3>
+     <h3 class="bg-dark text-danger">Text danger</h3>
+     <h3 class="bg-light text-secondary">Text secondary</h3>
+     <h3 class="bg-dark text-white">Text white</h3>
+     <h3 class="bg-light text-dark">Text dark</h3>
+     <h3 class="bg-dark text-light">Text light</h3>
+   </div>
+<!--table-->  
+  <br>
+  <h2 style="text-align: center; color: #3AF388">Flashbangers Squad: Battlefield 4</h2>
+  <br>
+  <table class="table table-bordered text-light" style="text-align: center">
+     <thead>
+       <tr>
+         <th>Tony Miller</th>
+         <th>Age: 46</th>
+         <th>Rank: LVL 115</th>
+         <th>Squad: Flashbangers</th>
+       </tr>
+    </thead>
+    <tbody>
+       <tr>
+         <td>John smith</td>
+         <td>Age: 16</td>
+         <td>Rank: LVL 135</td>
+         <td>Squad: Flashbangers</td>
+       </tr>
+       <tr>
+         <td>Janna Olafssen</td>
+         <td>Age: 23</td>
+         <td>Rank: LVL 140</td>
+         <td>Squad: Flashbangers</td>
+       </tr>
+       <tr>
+         <td>Mike Jones</td>
+         <td>Age: 20</td>
+         <td>Rank: LVL 105</td>
+         <td>Squad: Flashbangers</td>
+       </tr>
+    </tbody>
+  </table>
+ <br>
+<!--Jumbotron-->
+<div class="container">
+ <div class="jumbotron" style="text-decoration:none">
+   <h2>This is the Jumbotron space</h2>
+   <a href="#">links</a>
+   <p>general stuff like information or other things that you would like to highlight.</p>
+   <a href="#">other links</a>
+ </div>
+</div>
+<br>
+  
+<!--Images-->  
+<div class="container">
+  <h2 class="text-white">Images have three inherent values rounded, circle, thumbnail</h2>
+  <img src="https://assets.codepen.io/4996277/flowers-1600001049964-4803.jpg" class="rounded" alt="purple flowers" width="300" height="150"/>
+  <img src="https://assets.codepen.io/4996277/colorful-background-1.jpg" class="rounded-circle" alt="colorful wood" width="300" height="150"/>
+  <img src="https://assets.codepen.io/4996277/beautiful_orange_flower-wallpaper-1280x720.jpg" class="img-thumbnail" alt="orange flower" width="300" height="150"/>
+</div>
+  
+  
+  
+<br>
+<br>
+</div>
     
     
     
