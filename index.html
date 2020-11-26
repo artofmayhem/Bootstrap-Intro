@@ -145,6 +145,198 @@
      <button type="button" class="btn btn-outline-light">Colorful</button>
   </div>
   
+
+Tools
+Sign In
+
+Parallax
+Bootstrap Parallax
+
+Bootstrap parallax is a design effect visible while scrolling down - the background image moves with a different speed than the foreground content.
+Basic structure
+
+HTML construction
+
+    HTML
+    JavaScript
+
+<!-- Main layout -->
+<main>
+
+  <div class="view jarallax" style="height: 100vh;">
+    <img class="jarallax-img" src="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg" alt="">
+    <div class="mask rgba-blue-slight">
+      <div class="container flex-center text-center">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <h1 class="display-3 mb-2 wow fadeInDown" data-wow-delay="0.3s">NATALIE <a class="indigo-text font-weight-bold">SMITH</a></h1>
+            <h5 class="text-uppercase mb-3 mt-1 font-weight-bold wow fadeIn" data-wow-delay="0.4s">Web developer & graphic designer</h5>
+            <a class="btn btn-light-blue btn-lg wow fadeIn" data-wow-delay="0.4s">portfolio</a> <a class="btn btn-indigo btn-lg wow fadeIn" data-wow-delay="0.4s">About me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row mb-5 pb-4">
+
+      <!--Grid column-->
+      <div class="col-md-12 text-center">
+
+        <h2 class="h1 font-weight-bold light-blue-text my-5 py-4">Lorem ipsum dolor sit amet, consectetur quis elit.</h2>
+        <p align="justify">Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis cupiditate reprehenderit.</p>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+
+  <div class="view jarallax">
+    <img class="jarallax-img" src="https://mdbootstrap.com/img/Photos/Others/nature4.jpg" alt="">
+  </div>
+
+</main>
+<!-- Main layout -->
+
+  <h3 class="text-light">Background Picture Usage Examples</h3>
+
+  <h4 class="text-light">You have 3 options to load the picture in parallax.</h4>
+
+    HTML
+
+<!-- Background Image Parallax -->
+<div class="jarallax">
+  <img class="jarallax-img" src="https://assets.codepen.io/4996277/abstract-background-29541298969012mXm_1.jpg" alt="pic">
+  <h3 class="text-light" style="text-align:center">Text</h3>
+</div>
+
+<!-- Background Image Parallax with <picture> tag -->
+<div class="jarallax">
+  <picture class="jarallax-img">
+    <source media="..." srcset="https://assets.codepen.io/4996277/pexels-oleg-magni-1040473_1.jpg">
+    <img src="https://assets.codepen.io/4996277/original_2.jpg" alt="">
+  </picture>
+    <h3 class="text-light" style="text-align:center">Text</h3>
+</div>
+
+<!-- Alternate: Background Image Parallax -->
+<div class="jarallax" style="background-image: url('https://assets.codepen.io/4996277/pexels-elijah-o%27donnell-4173624.jpg');">
+  Your content here...
+</div>
+<!--
+Call the plugin
+
+You have 3 options to call the parallax plugin.
+Data attribute method
+
+    HTML
+
+<div data-jarallax data-speed="0.2" class="jarallax">
+  <img class="jarallax-img" src="<background_image_url_here>" alt="">
+  Your content here...
+</div>
+
+Note: You can use all the available options as data attributes. For example: data-speed, data-img-src, data-img-size, etc...
+JavaScript method
+
+    JavaScript
+
+jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.2
+});
+
+jQuery method
+
+    JavaScript
+
+$('.jarallax').jarallax({
+  speed: 0.2
+});
+
+Background Video Usage Examples
+
+You also have 3 options when loading the video in parallax.
+-->
+    HTML
+
+<!-- Background YouTube Parallax -->
+<div class="jarallax" data-jarallax-video="https://www.youtube.com/watch?v=ab0TSkLe-E0">
+  Your content here...
+</div>
+
+<!-- Background Vimeo Parallax -->
+<div class="jarallax" data-jarallax-video="https://vimeo.com/110138539">
+  Your content here...
+</div>
+
+<!-- Background Local Video Parallax -->
+<div class="jarallax" data-jarallax-video="mp4:./video/local-video.mp4,webm:./video/local-video.webm,ogv:./video/local-video.ogv">
+  Your content here...
+</div>
+<!--
+    Note:
+
+    Local videos may require only one video type, not necessarily the use of all of mp4, webm and ogv. This is only for maximum compatibility with all browsers.
+
+Options
+
+Options can be passed in data attributes or in an object when you initialize jarallax from the script.
+Name 	Type 	Default 	Description
+type 	string 	scroll 	scroll, scale, opacity, scroll-opacity, scale-opacity.
+speed 	float 	0.5 	Parallax effect speed. Provide numbers from -1.0 to 2.0.
+imgSrc 	path 	null 	Image url. By default use an image from the background.
+imgElement 	dom / selector 	.jarallax-img 	Image tag that will be used as the background.
+imgSize 	string 	cover 	Image size. If you use the <img> tag for background, you should add object-fit values, else use the background-size values.
+imgPosition 	string 	50% 50% 	Image position. If you use the <img> tag for background, you should add object-position values, else use the background-position values.
+imgRepeat 	string 	no-repeat 	Image repeat. Supports only background-position values.
+keepImg 	boolean 	false 	Keep the <img> tag in it's default place after Jarallax inited.
+elementInViewport 	dom 	null 	Use a custom DOM / jQuery element to check if there is a parallax block in viewport. More info here - Issue 13.
+zIndex 	number 	-100 	z-index of the parallax container.
+disableParallax 	RegExp / function 	- 	Disable parallax on specific user agents (using regular expression) or with a function return value. The image will be set on the background.
+disableVideo 	RegExp / function 	- 	Disable video loading on specific user agents (using regular expression) or with a function return value. The image will be set on the background.
+automaticResize 	boolean 	false 	Experimental! Automatically recalculates parallax size and position when the size of parallax block changes (dynamic content inside). Uses ResizeObserver, which has a small browsers compatible. Recommended to use with polyfill https://github.com/que-etc/resize-observer-polyfill.
+Disable on mobile devices
+
+You can disable the parallax effect and/or video background on mobile devices using the option disableParallax and/or disableVideo.
+
+Example:
+
+    JavaScript
+
+jarallax(document.querySelectorAll('.jarallax'), {
+  disableParallax: /iPad|iPhone|iPod|Android/,
+  disableVideo: /iPad|iPhone|iPod|Android/
+});
+
+Or by using a function. Example:
+
+    JavaScript
+
+jarallax(document.querySelectorAll('.jarallax'), {
+  disableParallax: function () {
+    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+  },
+  disableVideo: function () {
+    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+  }
+});
+Options For Video (+ supported all default options)
+
+Options can be passed in data attributes or in object when you initialize jarallax from script.
+Name 	Type 	Default 	Description
+videoSrc 	string 	null 	You can use Youtube, Vimeo or local videos. Also you can use the data attribute data-jarallax-video.
+videoStartTime 	float 	0 	Start time in seconds when the video will be started (this value will be applied also after the loop).
+videoEndTime 	float 	0 	End time in seconds when the video will be ended.
+videoVolume 	float 	0 	Video volume from 0 to 100.
+videoPlayOnlyVisible 	boolean 	true 	Play a video only when it is visible on the screen.
+-->
+
   
 <br>
 <br>
